@@ -1,0 +1,102 @@
+header,
+h2 {
+  text-align: center;
+}
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+}
+.navbar-inverse {
+  background: #555555;
+  color: #ffffff;
+}
+.nav.navbar-nav li a{
+	color: #ffffff;
+}
+.nav.navbar-nav li a:hover {
+ 	background-color:#000000;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  backgound: #dddddd;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #dddddd;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #dddddd;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a {
+  backgound: #dddddd;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background: #dddddd;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background: #dddddd;
+  color: #ffffff;
+}
+#loginModal {
+  color: #000000;
+}
+.carousel {
+  margin: 20px auto;
+  border: 2px solid #dddddd;
+  color: #000000;
+  background: #eeeeee;
+}
+.carousel .carousel-inner .item img {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 450px;
+}
+.carousel .carousel-caption {
+  color: #000000;
+}
+.carousel .carousel-indicators li {
+  border: 1px solid #000000;
+}
+.content {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.item-image img {
+  height: 250px;
+  width: 300px;
+}
+.form-group .form-control {
+  max-width: 150px;
+}
+.section {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.menu-list > li {
+  float: left;
+  margin: 15px;
+  border: 1px solid black;
+  list-style: none;
+}
+.menu-list > li:hover {
+  box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.05);
+  /* transform xác định một chuyển đổi khi trỏ chuột */
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 2;
+}
+.row-footer {
+  background-color: #eeeeee;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.row-footer .link-footer {
+  margin: 0px auto;
+  padding: 40px 10px;
+  float: right;
+}

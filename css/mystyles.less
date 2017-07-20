@@ -1,0 +1,106 @@
+@white: #ffffff;
+@off-white: #eeeeee;
+@lt-gray: #dddddd;
+@dark-indigo: #555555;
+@dark:#000000;
+// Height variables
+@carousel-height: 300px;
+@carousel-width: 450px;
+@img-width:300px;
+@img-height:250px;
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+	margin:0px auto;
+	padding: @pad-up-dn @pad-left-right;
+}
+header,h2{
+	text-align:center;
+}
+.jumbotron{
+	.zero-margin(70px,30px);
+}
+.navbar-inverse{
+	background:@dark-indigo;
+	color:@white;
+	.navbar-nav>.active>a{
+		backgound:@lt-gray;
+		color:@white;
+		&:hover{
+			background:@lt-gray;
+			color:@white;
+		}
+		&:focus{
+			background:@lt-gray;
+			color:@white;
+		}
+	}
+	.navbar-nav>.open>a{
+		backgound:@lt-gray;
+		color:@white;
+		&:hover{
+			background:@lt-gray;
+			color:@white;
+		}
+		&:focus{
+			background:@lt-gray;
+			color:@white;
+		}
+	}
+}
+#loginModal{
+	color:@dark;
+}
+.carousel{
+	margin:20px auto;
+	border:2px solid @lt-gray;
+	color:@dark;
+	background:@off-white;
+	.carousel-inner .item img{
+			position: relative;
+    		top: 0;
+    		left: 0;
+   		 	height:@carousel-height;
+   		 	width:@carousel-width;
+   		 	 	
+	}
+	.carousel-caption{
+			color:@dark;
+				}	
+	.carousel-indicators li{
+		border:1px solid @dark;
+	}
+}
+.content{
+	.zero-margin(0px,0px);
+}
+.item-image img{
+	height:@img-height;
+   	width:@img-width;
+}
+.form-group .form-control{
+	max-width:150px;
+}
+.section{
+	border-top:1px solid @lt-gray;
+	border-bottom:1px solid @lt-gray;
+}
+.menu-list >li{
+	float:left;
+	margin:15px;
+	border:1px solid black;
+	list-style:none;
+	&:hover{
+		box-shadow: 0 0 40px 40px rgba(0,0,0,0.05);
+	/* transform xác định một chuyển đổi khi trỏ chuột */
+  	-webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  	z-index: 2;
+	}
+}
+.row-footer{
+	background-color:@off-white;
+	.zero-margin(20px,0px);
+	.link-footer{
+	.zero-margin(40px,10px);
+	float:right;
+}
+}

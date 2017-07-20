@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice web programming</title>
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href ="css/style.css" rel="stylesheet">
+<link href ="css/bootstrap-social.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="jumbotron">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">JQUERY</a></li>
+            <li><a href="#">BOOTSTRAP</a></li>
+            
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Discussion Forums</a>
+			<li><a id="login-btn">
+					<span class="glyphicon glyphicon-log-in"></span>
+				Login</a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+<div class="container">
+<div id="loginModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" type="button">&times;</button>
+				<h4 class="modal-title">Login</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only" for="email">Email Adress:</label>
+						<input type="email" class="form-control" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="password">Password:</label>
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<div class="checkbox">
+								<label>
+									<input type="checkbox" name="approve" value="">
+									<strong>Remember me</strong>
+								</label>
+						</div>
+					</div>
+					<div class="form-group">
+							<button type="submit" class="btn btn-info">Sign In</button>
+							<button type="button" class="btn btn-default btn-sm" id="cancel-btn">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div>
+		<h1>Practice web programming</h1>
+		<p>No Comment</p>
+</div>
+</header>
+
+<div class="content">
+<div class="container">
+<div class="row row-content">
+	<div class="col-xs-12">
+	<p style="padding:20px;"></p>
+		<div id="mycarousel" class="carousel slide" data-ride="carousel">
+		 <ol class="carousel-indicators">
+    				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+    				<li data-target="#mycarousel" data-slide-to="1" ></li>
+    				<li data-target="#mycarousel" data-slide-to="2" ></li>
+    			</ol>
+			<div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                    	<img class="img-responsive " src="image/front-end.jpg">
+         				<div class="carousel-caption col-md-4 col-md-offset-4">
+         					<h2>FRONT-END</h2>
+         					<p>A unique combination of Indian Uthappam (pancake) and
+                          Italian pizza, topped with Cerignola olives, ripe vine
+                          cherry tomatoes, Vidalia onion, Guntur chillies and
+                          Buffalo Paneer.</p>
+                          <p><a href="#">More &raquo;</a></p>
+         				</div>
+                    </div>
+                    <div class="item">
+                    	<img class="img-responsive" src="image/backend.png">
+                    	<div class="carousel-caption col-md-4 col-md-offset-4">
+         					<h2>BACK-END</h2>
+         					<p>A unique combination of Indian Uthappam (pancake) and
+                          Italian pizza, topped with Cerignola olives, ripe vine
+                          cherry tomatoes, Vidalia onion, Guntur chillies and
+                          Buffalo Paneer.</p>
+                          <p><a href="#">More &raquo;</a></p>
+         				</div>
+                    </div>
+                    <div class="item">
+                    	<img class="img-responsive" src="image/fullstack.png">
+                    	<div class="carousel-caption col-md-4 col-md-offset-4">
+         					<h2>FULLSTACK</h2>
+         					<p>A unique combination of Indian Uthappam (pancake) and
+                          Italian pizza, topped with Cerignola olives, ripe vine
+                          cherry tomatoes, Vidalia onion, Guntur chillies and
+                          Buffalo Paneer.</p>
+                          <p><a href="#">More &raquo;</a></p>
+         				</div>
+                    </div>
+            </div>
+           <!-- Controls -->
+                <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+		</div>
+	</div>
+</div>
+<div class="section">
+	<div class="section-inner container">
+		<h2>Learning Content</h2>
+		<ul class="menu-list">
+			<li class="item">
+				<div class="item-image">
+					<img src="image/html5.png">
+				</div>
+			</li>
+			<li class="item">
+				<div class="item-image">
+					<img  src="image/css.jpg">
+				</div>
+			</li>
+			<li class="item">
+				<div class="item-image">
+					<img src="image/javascript.png">
+				</div>
+			</li>
+			<li class="item">
+				<div class="item-image">
+					<img src="image/bootstrap.png">
+				</div>
+			</li>
+			<li class="item">
+				<div class="item-image">
+					<img src="image/jquery.jpg">
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<div class="text-content container">
+	<h3>What is Lorem Ipsum?</h3>
+	<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+</div>
+<footer class="row-footer">
+	<div class="container">
+	<div class="link-footer" >
+        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a class="btn btn-social-icon" href="mailto:" target="_blank"><i class="fa fa-envelope-o"></i></a>
+    </div>
+    </div>
+</footer>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+$("#login-btn").click(function(){
+	$("#loginModal").modal('show');
+});
+$("#cancel-btn").click(function(){
+$("#loginModal").modal('hide');
+});
+$(".close").click(function(){
+$("#loginModal").modal('hide');
+});
+</script>
+</body>
+</html>
