@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice web programming</title>
+<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href ="../styles/style.css" rel="stylesheet">
+<link href ="../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+	<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar1" aria-expanded="false" aria-controls="navbar1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar2" aria-expanded="false" aria-controls="navbar2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+	</div>
+	<div id="navbar1" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">JQUERY</a></li>
+            <li><a href="#">BOOTSTRAP</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Discussion Forums</a>
+			<li><a id="login-btn">
+					<span class="glyphicon glyphicon-log-in"></span>
+				Login</a></li>
+		</ul>
+	</div>
+	</div>
+	<div id="navbar2" class="menuleft ">
+		<div class="nav navbar-nav menunav">
+			<div class="title-menu">
+				<h2>Bootstrap</h2>
+			</div>
+			<a href="bootstrap.html">Introduction</a>
+			<a href="buttons.html">Button</a>
+			<a href="#">Forms</a>
+			<a href="#">Alerts</a>
+			<a href="#">Media Images</a>
+		</div>
+</div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" type="button">&times;</button>
+				<h4 class="modal-title">Login</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only" for="email">Email Adress:</label>
+						<input type="email" class="form-control" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="password">Password:</label>
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<div class="checkbox">
+								<label>
+									<input type="checkbox" name="approve" value="">
+									<strong>Remember me</strong>
+								</label>
+						</div>
+					</div>
+					<div class="form-group">
+							<button type="submit" class="btn btn-info">Sign In</button>
+							<button type="button" class="btn btn-default btn-sm" id="cancel-btn">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="content container">
+<div class="corecontent">
+	<h1>Buttons</h1>
+		<div class="content-block">
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="hd1">
+						<h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordian" href="#1"
+							aria-expanded="true" aria-controls="1">Color Buttons</a>
+						 </h3>
+					</div>
+					<div role="tabpanel" class="panel-collapse collapse in" id="1" aria-labelledby="hd1">
+						<div class="panel-body">
+							<button type="button" class="btn" data-toggle="collapse" data-target="#basic">Basic</button>
+							<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#default">Default</button>
+							<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#primary">Primary</button>
+							<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#success">Success</button>
+							<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#info">Info</button>
+							<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#warning">Warning</button>
+							<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#danger">Danger</button>
+							<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#link">Link</button>
+							<div id="basic" class="collapse">
+								&lt;button type="button" class="btn"&gt;Basic&lt;/button&gt;
+							</div>
+							
+							<div id="default" class="collapse">
+								&lt;button type="button" class="btn btn-defalut"&gt;Default&lt;/button&gt;
+							</div>
+							
+							<div id="primary" class="collapse">
+								&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+							</div>
+							
+							<div id="success" class="collapse">
+								&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+							</div>
+							
+							<div id="info" class="collapse">
+								&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+							</div>
+							
+							<div id="warning" class="collapse">
+								&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+							</div>	
+							
+							<div id="danger" class="collapse">
+								&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+							</div>
+							
+							<div id="link" class="collapse">
+								&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
+							</div>
+						</div>
+					</div>
+					<div class="panel-heading" role="tab" id="hd2">
+						<h3 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordian" href="#2"
+							aria-expanded="true" aria-controls="2">Button Sizes</a>
+						 </h3>
+					</div>
+					<div role="tabpanel" class="panel-collapse collapse in" id="2" aria-labelledby="hd2">
+						<div class="panel-body">
+							<button type="button" class="btn btn-success btn-lg" data-toggle="collapse" data-target="#lg">Success</button>
+							<button type="button" class="btn btn-success btn-md" data-toggle="collapse" data-target="#md">Success</button>
+							<button type="button" class="btn btn-success btn-sm" data-toggle="collapse" data-target="#sm">Success</button>
+							<button type="button" class="btn btn-success btn-xs" data-toggle="collapse" data-target="#xs">Success</button>
+							<div id="lg" class="collapse">
+								&lt;button type="button" class="btn btn-success btn-lg"&gt;Success&lt;/button&gt;
+							</div>
+							<div id="md" class="collapse">
+								&lt;button type="button" class="btn btn-success btn-md"&gt;Success&lt;/button&gt;
+							</div>
+							<div id="sm" class="collapse">
+								&lt;button type="button" class="btn btn-success btn-sm"&gt;Success&lt;/button&gt;
+							</div>
+							<div id="xs" class="collapse">
+								&lt;button type="button" class="btn btn-success btn-xs"&gt;Success&lt;/button&gt;
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+</div>
+
+<footer class="row-footer">
+	<div class="container">
+	<div class="link-footer" >
+        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a class="btn btn-social-icon" href="mailto:" target="_blank"><i class="fa fa-envelope-o"></i></a>
+    </div>
+    </div>
+</footer>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+$("#login-btn").click(function(){
+	$("#loginModal").modal('show');
+});
+$("#cancel-btn").click(function(){
+$("#loginModal").modal('hide');
+});
+$(".close").click(function(){
+$("#loginModal").modal('hide');
+});
+</script>
+</body>
+</html>

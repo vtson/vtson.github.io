@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice web programming</title>
+<link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="../../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href ="../styles/style.css" rel="stylesheet">
+<link href ="../../bower_components/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+	<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar1" aria-expanded="false" aria-controls="navbar1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				data-target="#navbar2" aria-expanded="false" aria-controls="navbar2">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+	</div>
+	<div id="navbar1" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">JQUERY</a></li>
+            <li><a href="#">BOOTSTRAP</a></li>
+            
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Discussion Forums</a>
+			<li><a id="login-btn">
+					<span class="glyphicon glyphicon-log-in"></span>
+				Login</a></li>
+		</ul>
+		</div>
+	
+	</div>
+	<div id="navbar2" class="menuleft">
+		<div class="nav navbar-nav menunav">
+			<div class="title-menu">
+				<h2>Bootstrap</h2>
+			</div>
+			<a href="bootstrap.html">Introduction</a>
+			<a href="buttons.html">Button</a>
+			<a href="#">Forms</a>
+			<a href="#">Alerts</a>
+			<a href="#">Media Images</a>
+		</div>
+</div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" type="button">&times;</button>
+				<h4 class="modal-title">Login</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only" for="email">Email Adress:</label>
+						<input type="email" class="form-control" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="password">Password:</label>
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<div class="checkbox">
+								<label>
+									<input type="checkbox" name="approve" value="">
+									<strong>Remember me</strong>
+								</label>
+						</div>
+					</div>
+					<div class="form-group">
+							<button type="submit" class="btn btn-info">Sign In</button>
+							<button type="button" class="btn btn-default btn-sm" id="cancel-btn">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="content container">
+<div class="corecontent">
+			<div class="text-content">
+				<h3>Introduction</h3>
+				<p>
+Bootstrap is the world’s most popular framework for building responsive, mobile-first sites and applications. Inside you’ll find high quality HTML, CSS, and JavaScript to make starting any project easier than ever.
+				</p>
+			</div>
+</div>
+</div>
+<footer class="row-footer">
+	<div class="container">
+	<div class="link-footer" >
+        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a class="btn btn-social-icon" href="mailto:" target="_blank"><i class="fa fa-envelope-o"></i></a>
+    </div>
+    </div>
+</footer>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+$("#login-btn").click(function(){
+	$("#loginModal").modal('show');
+});
+$("#cancel-btn").click(function(){
+$("#loginModal").modal('hide');
+});
+$(".close").click(function(){
+$("#loginModal").modal('hide');
+});
+</script>
+</body>
+</html>

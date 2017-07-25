@@ -1,14 +1,10 @@
 {
   "name": "mproject",
   "authors": [
-    "vts"
+    "vu thanh son <vts.vuthanhson@gmail.com>"
   ],
-  "description": "Learning fullstack development",
+  "description": "",
   "main": "index.html",
-  "keywords": [
-    "fullstack",
-    "development"
-  ],
   "license": "MIT",
   "homepage": "index.html",
   "private": true,
@@ -18,9 +14,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
-  }
+  ]
 }
